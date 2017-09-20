@@ -11,7 +11,7 @@
 get_header(); 
 ?>
 
-
+<div class="single-portfolio-bg">
 	<div class="container">
 
 		<div class="col-md-8 col-md-push-2">
@@ -46,10 +46,10 @@ get_header();
 						<div class="row">
 							<p>Соціальні посилання</p>
 							<div class="col-md-6">
-								<a href="<?=get_post_field('link_inst')?>">inst</a>
-								<a href="<?=get_post_field('link_fb')?>">fb</a>
-								<a href="<?=get_post_field('link_vimeo')?>">Vim</a>
-								<a href="<?=get_post_field('link_youtube')?>">YouT</a>
+								<a href="<?=get_post_field('link_inst')?>"><img class="single-social-img " src="/wp-content/themes/flash-child/img/insta.png" alt="Instagram"></a>
+								<a href="<?=get_post_field('link_fb')?>"><img class="single-social-img" src="/wp-content/themes/flash-child/img/fb.png" alt="Facebook"></a>
+								<a href="<?=get_post_field('link_vimeo')?>"><img class="single-social-img" src="/wp-content/themes/flash-child/img/vimeo.png" alt="Vimeo"></a>
+								<a href="<?=get_post_field('link_youtube')?>"><img class="single-social-img" src="/wp-content/themes/flash-child/img/yt.png" alt="You Tube"></a>
 							</div>
 							<div class="col-md-6">
 								<?=html_entity_decode(get_field('other_link'));?>
@@ -62,5 +62,6 @@ get_header();
 		</div>
 
 	</div>
+</div>	
 <?php
 get_footer();

@@ -135,6 +135,12 @@ position: relative;
  	color: #ccc;
  	text-decoration: none;
  }
+ #site-navigation ul li:hover > a, #site-navigation ul li.current-menu-item > a, #site-navigation ul li.current_page_item > a{
+ 	color: #ccc;
+ }
+  #site-navigation ul li a:focus{
+ 	text-decoration: none;
+ }
  .transparent .search-wrap .search-icon {
     padding-top: 6px;
     border: none;
@@ -142,6 +148,9 @@ position: relative;
 .header-bottom .search-icon{
     color: #f0f0f0;
     border: none;
+}
+.header-bottom .search-icon:hover{
+	color: #BDBDBD;
 }
 .intro-block{
 	color: white;
@@ -178,10 +187,6 @@ background-color: #353940 !important;
 /*ul,li,a,span,section,body,div{
 	outline: 1px solid red;
 }*/
-.row{
-	margin-right:0 !important;
-	margin-left: 0 !important; 
-}
 
 .full-height{
 	height: 100vh;
@@ -543,4 +548,54 @@ padding: 0px 10px 0px 10px;
 }
 #post-196{
 		background-color: #353940;
+}
+.single-portfolio-bg, .single-post-bg{
+		background-color: #353940;
+	color: white;
+	padding-top: 50px;
+}
+.single-social-img{
+	width: 30px;
+}
+.single-post-container-single{
+	height: 400px;
+	position: relative;
+	
+}
+.post-content-single{
+	position: relative;
+}
+.single-block-bg{
+		background-color: rgba(0, 0, 0, 0.5);
+padding: 10px;
+
+}
+.single-post-content{
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+width: 100%;	
+}
+.last-film-btn1{
+    border: none !important;
+	border-bottom: 2px solid !important;
+    border-radius: 10px !important;
+    padding: 12px 15px 12px 15px !important;
+    color: #fff !important;
+    text-shadow: 5px 3px 5px black !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    background-color: rgb(53, 58, 64) !important;
+}
+.last-film-btn2{
+    border: none !important;
+	border-bottom: 2px solid rgb(0, 10, 28) !important;
+    border-radius: 10px !important;
+    padding: 12px 15px 12px 15px !important;
+    color: black !important;
+    text-shadow: 0px 0px 0px black !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    background-color: rgb(100, 146, 161) !important;
 }

@@ -87,7 +87,7 @@ get_header(); ?>
 				<div class="col-md-6 col-md-push-6 text-center ">
 					<img class="slide-1-img" src="<?=get_field('screen_3_slaid_1_img')?>" alt="">
 					<div class="new-film-text"><?=html_entity_decode(get_field('screen_3_slaid_1_text'));?></div>
-					<a href="<?=get_field('screen_3_slaid_1_link')?>" class="btn btn-default">Детальніше</a>
+					<a href="<?=get_field('screen_3_slaid_1_link')?>" class="btn btn-default last-film-btn1">Детальніше</a>
 				</div>
 				</div>
 			</div>
@@ -99,7 +99,7 @@ get_header(); ?>
 				<div class="col-md-6 col-md-push-3 text-center">
 					<img class="slide-1-img" src="<?=get_field('screen_3_slaid_2_img')?>" alt="">
 					<div class="new-film-text"><?=html_entity_decode(get_field('screen_3_slaid_2_text'));?></div>
-					<a href="<?=get_field('screen_3_slaid_2_link')?>" class="btn btn-default">Детальніше</a>
+					<a href="<?=get_field('screen_3_slaid_2_link')?>" class="btn btn-default last-film-btn2">Детальніше</a>
 				</div>
 			</div>
 		</div>

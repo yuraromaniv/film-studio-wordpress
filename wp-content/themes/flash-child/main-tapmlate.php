@@ -38,7 +38,7 @@ get_header(); ?>
 					<!-- slide-1 -->
 					<div id="screen-2-slide-1" class="item active">
 
-						<div class="row full-height" style="background: url(<?=get_field('screen_2_slaid_1_img_back')?>);">
+						<div class="row full-height" style="margin-right:0 !important;margin-left: 0 !important; background: url(<?=get_field('screen_2_slaid_1_img_back')?>);">
 							<div class="col-md-5 container">
 							<div class="slide-1-content">
 								<img class="slide-1-img" src="<?=get_field('screen_2_slaid_1_img')?>">
@@ -51,7 +51,7 @@ get_header(); ?>
 					
 					<!-- slide-2 -->
 					<div id="screen-2-slide-2" class="item">
-						<div class="row embed-container">
+						<div style="margin-right:0 !important;margin-left: 0 !important;" class="row embed-container">
 							<div class="col-lg-12 text-center">
 							<?=html_entity_decode(get_field('screen_2_slaid_2_video_link'));?>
 							</div>
@@ -60,7 +60,7 @@ get_header(); ?>
 					
 					<!-- slide-3 -->
 					<div id="screen-2-slide-3" class="item">
-						<div class="row">
+						<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 							<?php echo do_shortcode(get_field('screen_2_slaid_3_gallery')); ?>	
 						</div>
 					</div>
@@ -81,7 +81,7 @@ get_header(); ?>
 	</section>
 
 	<section class="section" id="screen-3" data-anchor="last-project">
-		<div class="row">
+		<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 			<div class="film-1-conteiner " style="background-image: url(<?=get_field('screen_3_slaid_1_img_back')?>);">
 			<div class="container">
 				<div class="col-md-6 col-md-push-6 text-center ">

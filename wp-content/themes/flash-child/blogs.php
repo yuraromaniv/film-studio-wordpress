@@ -53,23 +53,25 @@ get_header();
 ?>
 
 
-	<div class="container">
-		
+	<div class="news-bg">
+		<div style="padding: 0;" class="container news-block-bg">
 		<!-- sidebar -->
-		<div class="col-md-3 col-md-push-9" id="sidebar">
-			<p class="text-center">Останні новини</p>
+		<div style="padding-right: 0" class="col-md-4 col-md-push-8" id="sidebar">
+			<p class="text-center last-news-sign">Останні новини</p>
 
 			<div class="last-news-container">
 			<?php foreach( $recent_posts as $recent ): ?>
-				<div class="recent-post-container" style="background-image: url(<?=get_the_post_thumbnail_url($recent["ID"])?>);">
+				<div class="recent-post-container" style="padding:0;background-size:cover; background-position: center; background-image: url(<?=get_the_post_thumbnail_url($recent["ID"])?>);">	<div class="rec-news-desc">
 					<p class="post-title"><?=$recent["post_title"]?></p>
 					<p class="post-sub-title"><?=html_entity_decode(get_field('sub_title', $recent["ID"]));?></p>
 					<div class="post-content">
 						<?=wp_trim_words($recent["post_content"], 15)?>
 					</div>
+
 					<div class="row">
 						<div class="col-md-6 text-left date-cont"><?=get_the_time('Y-m-d', $recent["ID"]);?></div>
 						<div class="col-md-6 text-right post-link-cont"><a href="<?=get_permalink($recent["ID"])?>">Детальніше</a></div>
+					</div>
 					</div>
 				</div>
 			<?php endforeach; ?>
@@ -81,8 +83,9 @@ get_header();
 		</div>
 
 		<!-- main post -->
-		<div class="col-md-9 col-md-pull-3" style="background-image: url(<?=get_the_post_thumbnail_url($first_posts["ID"], 'large')?>);">
+		<div class="col-md-8 col-md-pull-4" style="padding:0;background-size:cover; background-position: center; min-height:500px;background-image: url(<?=get_the_post_thumbnail_url($first_posts["ID"], 'large')?>);">
 			<div class="single-post-container">
+				
 				<p class="post-title"><?=$first_posts["post_title"]?></p>
 				<p class="post-sub-title"><?=html_entity_decode(get_field('sub_title', $first_posts["ID"]));?></p>
 				<div class="post-content">
@@ -92,9 +95,11 @@ get_header();
 					<div class="col-md-6 text-left date-cont"><?=get_the_time('Y-m-d', $first_posts["ID"]);?></div>
 					<div class="col-md-6 text-right post-link-cont"><a href="<?=get_permalink($first_posts["ID"])?>">Детальніше</a></div>
 				</div>
+			
 			</div>
 		</div>
-
+		
+</div>
 	</div>
 	
 	<script>

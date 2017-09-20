@@ -19,6 +19,7 @@ Version:        1.0.0
 /* Header */
 .logo .logo-image{
 	padding: 10px;
+	line-height: 60px;
 }
 .logo .logo-image img{
 width: 100%;
@@ -122,13 +123,24 @@ position: relative;
   	padding: 30px 30px 20px 30px;
  	float: none;
  }
+#site-navigation ul li:hover > a {
+	color: #ccc;
+ }
  #site-navigation ul li a{
  	font-weight: 300;
  	text-transform: uppercase;
+ 	color: #f0f0f0;
  }
-
+ #site-navigation ul li a:hover{
+ 	color: #ccc;
+ 	text-decoration: none;
+ }
  .transparent .search-wrap .search-icon {
     padding-top: 6px;
+    border: none;
+}
+.header-bottom .search-icon{
+    color: #f0f0f0;
     border: none;
 }
 .intro-block{
@@ -425,4 +437,110 @@ padding: 0px 10px 0px 10px;
     opacity: 0;
     width: 0;
     cursor: pointer;
+}
+.news-bg{
+	background-color: #353940;
+	padding-top: 100px;
+}
+.recent-post-container{
+	margin-bottom: 20px;
+	min-height: 200px;
+	position: relative;
+
+}
+.last-news-sign{
+	color: white;
+	font-size: 17px;
+}
+.single-post-container{
+	padding: 10px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	bottom: 0;
+}
+.post-sub-title{
+	color: white;
+	border-bottom: 2px solid white;
+	line-height: 2;
+}
+.news-block-bg{
+		background-color: rgba(0, 0, 0, 0.4);
+}
+.last-news-container{
+	height: 465px;
+	color: white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.rec-news-desc{
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.rec-news-desc .post-title{
+	font-size: 14px;
+}
+.rec-news-desc .post-content{
+	font-size: 12px;
+}
+.date-cont{
+	font-size: 11px;
+	padding-top: 5px;
+}
+
+/*скрол*/
+::-webkit-scrollbar{
+    width:12px;
+}
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+
+.header-bottom .search-box{
+	background-color: transparent !important;
+	box-shadow: none !important;
+	width: 248px !important;
+	top: 80px !important;
+    right: 0 !important;
+    padding: 0;
+}
+#ajaxsearchliteres1{
+    width: 240px !important;
+    top: 120px !important;
+    left: 990px !important;
+    background: white;
+}
+.promagnifier{
+	background: rgb(195, 206, 224) !important;
+	background-image: none;
+}
+.proinput{
+	background: #c3cee0;
+}
+.proclose{
+	background: #c3cee0;
+}
+#ajaxsearchlite1 .probox, div[id*="ajaxsearchlite"] .probox{
+	background-color: #c3cee0 !important;
+	background-image: none !important;
+}
+#post-196{
+		background-color: #353940;
 }

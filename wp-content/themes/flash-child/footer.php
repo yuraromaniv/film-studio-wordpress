@@ -27,6 +27,7 @@
 	do_action( 'flash_before_footer' ); ?>
 
 	<footer id="colophon" class="footer-layout site-footer" role="contentinfo">
+		
 		<?php get_sidebar( 'footer' ); ?>
 	</footer><!-- #colophon -->
 
@@ -65,6 +66,12 @@ $(document).ready(function() {
 
 	});
 });
+</script>
+<script src="/wp-content/themes/flash-child/js/audio.min.js"></script>
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
 </script>
 <!-- <script>
 	 var $body = $('body'),

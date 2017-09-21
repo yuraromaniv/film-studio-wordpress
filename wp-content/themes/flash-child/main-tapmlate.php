@@ -92,9 +92,13 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+			<div class="sky-devider">
+		<img class="sky" src="/wp-content/themes/flash-child/img/dum.png" alt="sky">
+	</div>
 	</section>
+
 	<section class="section" id="screen-4" data-anchor="last-project-second">
-		<div class="row">
+		<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 			<div class="film-2-conteiner" style="background-image: url(<?=get_field('screen_3_slaid_2_img_back')?>);">
 				<div class="col-md-6 col-md-push-3 text-center">
 					<img class="slide-1-img" src="<?=get_field('screen_3_slaid_2_img')?>" alt="">
@@ -106,7 +110,7 @@ get_header(); ?>
 	</section>
 
 	<section class="section" id="screen-5" data-anchor="media">
-		<div class="row">
+		<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 			<div class="mar-top">
 				<div class="nav nav-tabs text-center">
 					<span class="active"><a data-toggle="tab" href="#menu1">Саундтреки</a></span>
@@ -123,14 +127,16 @@ get_header(); ?>
 						    <!-- Wrapper for slides -->
 						    <div class="carousel-inner">
 								<?php for ($i=1; $i <=3 ; $i++): ?>
-									<div class="item container audio-mar <?= $i == 1 ? 'active' : '' ?>">
+									<div class="item audio-mar <?= $i == 1 ? 'active' : '' ?>">
 										<?php for ($j=1; $j <=3 ; $j++): ?>
 											<div class="col-md-4">
 											<div class="audio-block" style="background: url(<?=get_field('audio_slide_'.$i.'_audio_'.$j.'_img', '58')?>);">
+												<div class="player-block black-mask">
 												<audio controls>
 												  	<source src="<?=get_field('audio_slide_'.$i.'_audio_'.$j.'_file', '58')?>" type="audio/mpeg">
 												</audio>
-												<div>
+												</div>
+												<div class="audio-desc">
 													<?=html_entity_decode(get_field('audio_slide_'.$i.'_audio_'.$j.'_text', '58'))?>
 													
 												</div>
@@ -196,35 +202,50 @@ get_header(); ?>
 
 	<section class="section" id="screen-6" data-anchor="social">
 		<div class="container">
-			<div class="row">
+			<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 				<div class="footer-mar text-center">
 				<div class="col-md-4">
 					<div class="row">
-						<h3><?=get_field('screen_5_col_1_soc_titile')?></h3>
+						<h3 class="footer-h3"><?=get_field('screen_5_col_1_soc_titile')?></h3>
 						<a href="<?=get_field('screen_5_col_1_soc_1')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/insta.png" alt="Instagram"></a>
 						<a href="<?=get_field('screen_5_col_1_soc_2')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/fb.png" alt="Facebook"></a>
 						<a href="<?=get_field('screen_5_col_1_soc_3')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/vimeo.png" alt="Vimeo"></a>
 						<a href="<?=get_field('screen_5_col_1_soc_4')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/yt.png" alt="You Tube"></a>
 					</div>
 					<div class="row">
-						<h3><?=get_field('screen_5_col_1_form_title')?></h3>
+						<h3 class="footer-h3"><?=get_field('screen_5_col_1_form_title')?></h3>
 						<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_1_form_code')));
 						?> 
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h3><?=get_field('screen_5_col_2_title')?></h3>
+					<h3 class="footer-h3"><?=get_field('screen_5_col_2_title')?></h3>
 					<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_2_gal')));
 					?> 
 				</div>
 				<div class="col-md-4">
-					<h3><?=get_field('screen_5_col_3_title')?></h3>
+					<h3 class="footer-h3"><?=get_field('screen_5_col_3_title')?></h3>
 					<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_3_gal')));
 					?> 
 				</div>
 				</div>
 			</div>
 		</div>
+		<div id="colophon" class="footer-layout site-footer" role="contentinfo">
+		<div class="footer-home text-center">
+			<div class="footer-home-top">
+					<a href="platform-it.com">
+				<img style="    width: 38px;" src="/wp-content/themes/flash-child/img/webstudio.png" alt="webstudio">
+				<span class="footer-text">
+				<span>designed by</span> 
+				<div style="margin-left: 50px;">platform <span style="color: #52ac62">it</span></div> </span>
+				</a>
+			</div>
+				<div class="footer-home-bot">
+				ЛЬВІВ 2017 | ВСІ ПРАВА ЗАХИЩЕНО
+			</div>
+		</div>
+	</div>
 	</section>
 
 </div>
@@ -238,4 +259,5 @@ get_header(); ?>
 	do_action( 'flash_after_body_content' ); ?>
 
 <?php
+
 get_footer();

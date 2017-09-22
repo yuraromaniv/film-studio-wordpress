@@ -231,7 +231,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div id="colophon" class="footer-layout site-footer" role="contentinfo">
+
 		<div class="footer-home text-center">
 			<div class="footer-home-top">
 					<a href="platform-it.com">
@@ -245,7 +245,7 @@ get_header(); ?>
 				ЛЬВІВ 2017 | ВСІ ПРАВА ЗАХИЩЕНО
 			</div>
 		</div>
-	</div>
+	
 	</section>
 
 </div>

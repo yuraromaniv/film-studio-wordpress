@@ -23,11 +23,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-<script>
-if (screen && screen.width > 991) {
-document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js""><\/script>');
-}
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"> </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -75,10 +71,10 @@ do_action( 'flash_before' ); ?>
 					<?php endif; ?>
 				</div>
 
-				<div class="col-md-10 site-navigation-container">
+				<div class="col-md-10 col-sm-12 site-navigation-container">
 					<div id="site-navigation" class="main-navigation text-center" role="navigation">
-						<div class="menu-toggle">
-							<i class="fa fa-bars"></i>
+						<div class="menu-toggle text-right">
+							<i class="fa fa-bars "></i>
 						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div><!-- #site-navigation -->					

@@ -53,7 +53,9 @@ do_action( 'flash_after' ); ?>
 
 
 <script>
-$(document).ready(function() {
+	$(window).on('resize', function () {
+    if ($(window).width() > 900) {
+       $(document).ready(function() {
 	$('#fullpage').fullpage({
 		
 		//Custom selectors
@@ -66,6 +68,9 @@ $(document).ready(function() {
 
 	});
 });
+    } 
+})
+
 </script>
 <script src="/wp-content/themes/flash-child/js/audio.min.js"></script>
 <script>
@@ -73,18 +78,6 @@ $(document).ready(function() {
     var as = audiojs.createAll();
   });
 </script>
-<!-- <script>
-	 var $body = $('body'),
-      $header = $('#mynav');
-  $(document).on('scroll', function () {
-        var position = $body.scrollTop(),
-            block_position = $('header').offset().top; // расположение блока, от которого и зависит фиксированность хэдера
-            if (position > block_position) { // если позиция скролла страницы больше, то ставим фикс
-                $header.addClass('nav-colored');
-            } else {
-                $header.removeClass('nav-colored');
-            }
-    });
-</script> -->
+
 </body>
 </html>

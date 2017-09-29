@@ -1017,6 +1017,9 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 .onenews-text{
 	color: #f0f0f0;
 }
+.form-pad{
+	padding-right:0px;
+}
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 	#screen-1, #screen-2-slide-2, #screen-2-slide-3, 
@@ -1035,6 +1038,103 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 	.intro-img {
 		max-width: 100%;
 	}
+	.wonderplugin-gridgallery-item{
+		display: none !important;
+	}
+	.wonderplugin-gridgallery-item:nth-child(1){
+		display: block !important;
 
+	}
+	.wonderplugin-gridgallery-item:nth-child(2){
+		display: block !important;
+	}
+	.wonderplugin-gridgallery-item:nth-child(3){
+		display: block !important;
+	}
+	.full-height{
+		height: 100%;
+	}
+	#screen-2-slide-2, #screen-2-slide-3{
+		height: 100%;
+	}
+	.slide-1-content{
+		margin-left: 0;
+		padding-bottom: 75px;
+	}
+	.slide-1-img{
+		margin-top: 75px;
+	}
+	.embed-container{ 
+		padding-bottom: 10px;
+	}
+	.embed-container iframe{
+		height: 250px;
+	}
+	#wonderplugingridgallery-1{
+		padding-bottom: 30px;
+	}
+	.film-1-conteiner, .film-2-conteiner {
+		height: 100%;
+	}
+	.pad-for-mob{
+		padding-bottom: 30px;
+	}
+	.sky {
+		position: absolute;
+		width: 100%;
+		margin-top: -60px;
+		z-index: 1;
+		height: auto;
+	}
+	#screen-4-carousel-1, #screen-4-carousel-2 {
+		position: relative;
+	}
+	.nav-tabs{
+		margin-top: 0px;
+	}
+	.nav-tabs span a {
+		font-size: 17px;
+	}
+	.audio-mar{
+		padding: 0px 5px 0px 5px;
+	}
+	.audio-block{
+		margin-top: 50px;
+	}
+	#wonderplugingridgallery-2, #wonderplugingridgallery-5, #wonderplugingridgallery-6{
+		margin-top: 50px !important;
+	}
+	.footer-mar {
+		margin-top: 15px;
+	}
+	.form-pad{
+		padding-right:0px;
+	}
+	#top-footer {
+		background-color: #313b48;
+		padding: 0;
+	}
+	.footer-home {
+		margin:0;
+	}
+	#top-footer .tg-column-wrapper .footer-block {
+		margin: 0px !important;
+	}
+	#top-footer .widget {
+		margin-bottom: 0px !important;
+	}
+	.footer-home-bot{
+		padding-top: 0px;
+	}
+	#site-navigation .menu-toggle{
+		z-index: 99999;
+	}
+	.logo .logo-image {
+		margin-top: -10px;
+	}
 }
 
+.pls-bot{
+	padding-top: 100px;
+
+}

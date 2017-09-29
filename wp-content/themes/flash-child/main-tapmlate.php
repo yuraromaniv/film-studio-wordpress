@@ -55,7 +55,7 @@ do_action( 'flash_before_body_content' ); ?>
 			<div id="screen-2-slide-1" class="item active">
 
 				<div class="row full-height" style="margin-right:0 !important;margin-left: 0 !important; background: url(<?=get_field('screen_2_slaid_1_img_back')?>);">
-					<div class="col-md-5 container">
+					<div class="col-md-12 col-lg-5 col-sm-12 container">
 						<div class="slide-1-content">
 							<img class="slide-1-img" src="<?=get_field('screen_2_slaid_1_img')?>">
 
@@ -101,7 +101,7 @@ do_action( 'flash_before_body_content' ); ?>
 	<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 		<div class="film-1-conteiner " style="background-image: url(<?=get_field('screen_3_slaid_1_img_back')?>);">
 			<div class="container">
-				<div class="col-md-6 col-md-push-6 text-center ">
+				<div class="col-md-6 col-md-push-6 text-center pad-for-mob">
 					<img class="slide-1-img" src="<?=get_field('screen_3_slaid_1_img')?>" alt="">
 					<div class="new-film-text"><?=html_entity_decode(get_field('screen_3_slaid_1_text'));?></div>
 					<a href="<?=get_field('screen_3_slaid_1_link')?>" class="btn btn-default last-film-btn1">Детальніше</a>
@@ -117,7 +117,7 @@ do_action( 'flash_before_body_content' ); ?>
 <section class="section" id="screen-4" data-anchor="last-project-second">
 	<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 		<div class="film-2-conteiner" style="background-image: url(<?=get_field('screen_3_slaid_2_img_back')?>);">
-			<div class="col-md-6 col-md-push-3 text-center">
+			<div class="col-md-6 col-md-push-3 text-center pad-for-mob">
 				<img class="slide-1-img" src="<?=get_field('screen_3_slaid_2_img')?>" alt="">
 				<div class="new-film-text"><?=html_entity_decode(get_field('screen_3_slaid_2_text'));?></div>
 				<a href="<?=get_field('screen_3_slaid_2_link')?>" class="btn btn-default last-film-btn2">Детальніше</a>
@@ -249,7 +249,7 @@ do_action( 'flash_before_body_content' ); ?>
 			</div>
 		</div>
 
-		<div class="footer-home text-center">
+		<div class="footer-home text-center hidden-xs">
 			<div class="footer-home-top">
 				<a href="platform-it.com">
 					<img style="    width: 38px;" src="/wp-content/themes/flash-child/img/webstudio.png" alt="webstudio">

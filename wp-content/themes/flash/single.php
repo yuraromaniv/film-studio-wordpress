@@ -1,61 +1,34 @@
 <?php
 /**
- * The template for displaying all single posts.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package Flash
- */
+* The template for displaying all single posts.
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+*
+* @package Flash
+*/
 
-get_header(); ?>
+$post_id = get_the_ID();
+setPostViews($post_id);
 
-	<?php
-	/**
-	 * flash_before_body_content hook
-	 */
-	do_action( 'flash_before_body_content' ); ?>
+get_header(); 
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="single-post-bg">
+	<div class="container single-block-bg">
 
-		<?php
-		while ( have_posts() ) : the_post();
-
-			get_template_part( 'template-parts/content', get_post_format() );
-			get_template_part( 'template-parts/author-bio', '' );
-
-			if ( get_theme_mod( 'flash_remove_single_nav', '') != '1' ) {
-				get_template_part( 'template-parts/post-navigation', '' );
-			}
-
-			/**
-			 * flash_before_comment_template hook
-			 */
-			do_action( 'flash_before_comment_template' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-			/**
-			 * flash_after_comment_template hook
-			 */
-			do_action( 'flash_after_comment_template' );
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	<?php
-	/**
-	 * flash_after_body_content hook
-	 */
-	do_action( 'flash_after_body_content' ); ?>
-
+		<div class="col-md-10 col-md-push-1" style="padding:0;background-size: cover;background-position: center;background-image: url(<?=get_the_post_thumbnail_url($post_id, 'large')?>);">
+			<div class="single-post-container-single">
+				<div class="single-post-content">
+					<p class="post-title onenews-title"><?=get_the_title()?></p>
+					<p class="post-sub-title-single onenews-sub-title"><?=html_entity_decode(get_field('sub_title', $post_id));?></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-push-1 post-content-single onenews-text"><div><span class="onenews-date text-left date-cont"><?=get_the_time('Y.m.d', $post_id);?></span>
+			<span class="text-left show-cont onenews-count"><span class="">&#128065;</span> <?=getPostViews($post_id);?></span></div>
+			<?=get_post_field('post_content', $post_id)?>
+		</div>
+	</div>
+</div>
 <?php
-get_sidebar();
-get_sidebar( 'left' );
 get_footer();

@@ -78,6 +78,56 @@ do_action( 'flash_after' ); ?>
     var as = audiojs.createAll();
   });
 </script>
+							<script type="text/javascript">
 
+								function openbox(box1){
+									display = document.getElementById(box1).style.display;
+
+									if(display=='none'){
+										document.getElementById(box1).style.display='block';
+									}else{
+										document.getElementById(box1).style.display='none';
+									}
+								}
+								function openbox(box2){
+									display = document.getElementById(box2).style.display;
+
+									if(display=='none'){
+										document.getElementById(box2).style.display='block';
+									}else{
+										document.getElementById(box2).style.display='none';
+									}
+								}
+								function openbox(box3){
+									display = document.getElementById(box3).style.display;
+
+									if(display=='none'){
+										document.getElementById(box3).style.display='block';
+									}else{
+										document.getElementById(box3).style.display='none';
+									}
+								}
+							</script>
+							<script>
+	document.getElementById('hider').onclick = function() {
+		document.getElementById('box1').style.display = 'none';
+		document.getElementById('box2').style.display = 'none';
+		document.getElementById('box3').style.display = 'none';
+	}
+</script>
+<script>
+	document.getElementById('hider2').onclick = function() {
+		document.getElementById('box1').style.display = 'none';
+		document.getElementById('box2').style.display = 'none';
+		document.getElementById('box3').style.display = 'none';
+	}
+</script>
+<script>
+	document.getElementById('hider3').onclick = function() {
+		document.getElementById('box1').style.display = 'none';
+		document.getElementById('box2').style.display = 'none';
+		document.getElementById('box3').style.display = 'none';
+	}
+</script>
 </body>
 </html>

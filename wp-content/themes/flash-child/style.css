@@ -1138,3 +1138,27 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 	padding-top: 100px;
 
 }
+.feed-block{
+	position: absolute;
+	right:80px;
+	top: 40%;
+	background-color: white;
+	height: 350px;
+	padding: 10px;
+	overflow: scroll;
+	width: 275px;
+}
+.hover-feed{
+	position: absolute;
+	right: 15px;
+	top: 75%;
+}
+.close-feed{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.hover-feed a{ 
+	position: relative;
+display: block;
+}

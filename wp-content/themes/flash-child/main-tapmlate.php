@@ -28,25 +28,43 @@ do_action( 'flash_before_body_content' ); ?>
 			</div>
 			<!-- Fix google issue -->
 			<script>
-				// Show loading animation.
-				var playPromise = video.play();
+// Show loading animation.
+var playPromise = video.play();
 
-				if (playPromise !== undefined) {
-					playPromise.then(_ => {
-				// Automatic playback started!
-				// Show playing UI.
-				})
-					.catch(error => {
-				// Auto-play was prevented
-				// Show paused UI.
-				});
-				}
-			</script>
-	</section>
+if (playPromise !== undefined) {
+	playPromise.then(_ => {
+// Automatic playback started!
+// Show playing UI.
+})
+	.catch(error => {
+// Auto-play was prevented
+// Show paused UI.
+});
+}
+</script>
+</section>
 
 <section class="section " id="screen-2" data-anchor="premiere">
 
-	<div id="screen-2-carousel" class="carousel slide" data-ride="carousel">    
+	<div id="screen-2-carousel" class="carousel slide" data-ride="carousel">    							<!-- Кнопки соцмереж -->
+							<div class="hover-feed"> 
+								<a href="#" onclick="openbox('box1'); return false"><img src="/wp-content/themes/flash/img/fb.png" alt="facebook"></a> 
+								<a href="#" onclick="openbox('box2'); return false"><img src="/wp-content/themes/flash/img/insta.png" alt="instagram"></a> 
+								<a href="#" onclick="openbox('box3'); return false"><img src="/wp-content/themes/flash/img/vimeo.png" alt="vimeo"></a> 
+							</div>
+														<!-- Вікна соцмереж -->
+							<div style="display: none;" class="feed-block" id="box1">
+								<a href="#" id="hider" class="close-feed">Close</a> 
+								<?php echo do_shortcode( '[custom-facebook-feed]' ); ?>
+							</div>
+							<div style="display: none;" class="feed-block" id="box2">
+								<a href="#" id="hider2" class="close-feed">Close</a> 
+								<?php echo do_shortcode( '[instagram-feed]' ); ?>
+							</div>
+							<div style="display: none;" class="feed-block" id="box3">
+								<a href="#" id="hider3" class="close-feed">Close</a> 
+								<?php echo do_shortcode( '[vimeography id="1"]' ); ?>
+							</div>
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
@@ -54,9 +72,13 @@ do_action( 'flash_before_body_content' ); ?>
 			<!-- slide-1 -->
 			<div id="screen-2-slide-1" class="item active">
 
+
+
 				<div class="row full-height" style="margin-right:0 !important;margin-left: 0 !important; background: url(<?=get_field('screen_2_slaid_1_img_back')?>);">
 					<div class="col-md-12 col-lg-5 col-sm-12 container">
 						<div class="slide-1-content">
+
+
 							<img class="slide-1-img" src="<?=get_field('screen_2_slaid_1_img')?>">
 
 							<div class="slide-1-text"><?=html_entity_decode(get_field('screen_2_slaid_1_text'));?>
@@ -87,6 +109,7 @@ do_action( 'flash_before_body_content' ); ?>
 
 		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#screen-2-carousel" data-slide="prev">
+
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span class="sr-only">Previous</span>
 		</a>

@@ -78,7 +78,7 @@ do_action( 'flash_after' ); ?>
     var as = audiojs.createAll();
   });
 </script>
-							<script type="text/javascript">
+							<script>
 
 								function openbox(box1){
 									display = document.getElementById(box1).style.display;
@@ -107,27 +107,55 @@ do_action( 'flash_after' ); ?>
 										document.getElementById(box3).style.display='none';
 									}
 								}
-							</script>
-							<script>
+							
 	document.getElementById('hider').onclick = function() {
 		document.getElementById('box1').style.display = 'none';
 		document.getElementById('box2').style.display = 'none';
 		document.getElementById('box3').style.display = 'none';
 	}
-</script>
-<script>
+
 	document.getElementById('hider2').onclick = function() {
 		document.getElementById('box1').style.display = 'none';
 		document.getElementById('box2').style.display = 'none';
 		document.getElementById('box3').style.display = 'none';
 	}
-</script>
-<script>
+
 	document.getElementById('hider3').onclick = function() {
 		document.getElementById('box1').style.display = 'none';
 		document.getElementById('box2').style.display = 'none';
 		document.getElementById('box3').style.display = 'none';
 	}
+
+	$(document).mouseup(function (e) {
+    var container = $("#box1");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+
+	$(document).mouseup(function (e) {
+    var container = $("#box2");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+
+	$(document).mouseup(function (e) {
+    var container = $("#box3");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+</script>
+<script>
+	jQuery(document).ready(function($) {
+  $(window).load(function() {
+    setTimeout(function() {
+      $('#preloader').fadeOut('slow', function() {});
+    }, 2000);
+
+  });
+});
 </script>
 </body>
 </html>

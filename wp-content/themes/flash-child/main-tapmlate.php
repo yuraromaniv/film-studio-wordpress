@@ -24,7 +24,7 @@ do_action( 'flash_before_body_content' ); ?>
 					<source src="<?=get_field('video_screen_1')?>" type="video/mp4">
 					</video>
 				</div>
-				<a href="#"><img class="intro-arrow pulse" src="/wp-content/themes/flash-child/img/arrow.png" alt="arrow"></a>
+				<a href="#premiere"><img class="intro-arrow pulse" src="/wp-content/themes/flash-child/img/arrow.png" alt="arrow"></a>
 			</div>
 			<!-- Fix google issue -->
 			<script>
@@ -53,19 +53,24 @@ if (playPromise !== undefined) {
 								<a href="#" onclick="openbox('box3'); return false"><img src="/wp-content/themes/flash/img/vimeo.png" alt="vimeo"></a> 
 							</div>
 														<!-- Вікна соцмереж -->
-							<div style="display: none;" class="feed-block" id="box1">
-								<a href="#" id="hider" class="close-feed">Close</a> 
-								<?php echo do_shortcode( '[custom-facebook-feed]' ); ?>
+							<div id="box1" style="display: none;">
+							<div class="feed-header"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook<a href="#" id="hider" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
+								<?php echo do_shortcode( '[custom-facebook-feed]' ); ?>	
 							</div>
-							<div style="display: none;" class="feed-block" id="box2">
-								<a href="#" id="hider2" class="close-feed">Close</a> 
+							</div>
+							<div id="box2" style="display: none;">
+							<div class="feed-header"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram<a href="#" id="hider2" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
 								<?php echo do_shortcode( '[instagram-feed]' ); ?>
 							</div>
-							<div style="display: none;" class="feed-block" id="box3">
-								<a href="#" id="hider3" class="close-feed">Close</a> 
+							</div>
+							<div id="box3" style="display: none;">
+							<div class="feed-header"><i class="fa fa-vimeo-square" aria-hidden="true"></i> Vimeo<a href="#" id="hider3" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
 								<?php echo do_shortcode( '[vimeography id="1"]' ); ?>
 							</div>
-
+							</div>										
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 

@@ -30,15 +30,23 @@
 
 <?php
 if ( get_theme_mod( 'flash_disable_preloader', '' ) != 1 ) : ?>
-<div id="preloader-background">
-	<div id="spinners">
-		<div id="preloader">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
+  <div class="loading" id="preloader">
+	<div class="loading-text">
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">N</span>
+		<span class="loading-text-words">V</span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">R</span>
+		<span class="loading-text-words">T</span>
+		<span class="loading-text-words"> </span>
+		<span class="loading-text-words">P</span>
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">C</span>
+		<span class="loading-text-words">T</span>
+		<span class="loading-text-words">U</span>
+		<span class="loading-text-words">R</span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">S</span>
 	</div>
 </div>
 <?php endif; ?>

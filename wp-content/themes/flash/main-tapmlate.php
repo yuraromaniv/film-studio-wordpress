@@ -24,39 +24,66 @@ do_action( 'flash_before_body_content' ); ?>
 					<source src="<?=get_field('video_screen_1')?>" type="video/mp4">
 					</video>
 				</div>
-				<a href="#"><img class="intro-arrow pulse" src="/wp-content/themes/flash-child/img/arrow.png" alt="arrow"></a>
+				<a href="#premiere"><img class="intro-arrow pulse" src="/wp-content/themes/flash/img/arrow.png" alt="arrow"></a>
 			</div>
 			<!-- Fix google issue -->
 			<script>
-				// Show loading animation.
-				var playPromise = video.play();
+// Show loading animation.
+var playPromise = video.play();
 
-				if (playPromise !== undefined) {
-					playPromise.then(_ => {
-				// Automatic playback started!
-				// Show playing UI.
-				})
-					.catch(error => {
-				// Auto-play was prevented
-				// Show paused UI.
-				});
-				}
-			</script>
-	</section>
+if (playPromise !== undefined) {
+	playPromise.then(_ => {
+// Automatic playback started!
+// Show playing UI.
+})
+	.catch(error => {
+// Auto-play was prevented
+// Show paused UI.
+});
+}
+</script>
+</section>
 
 <section class="section " id="screen-2" data-anchor="premiere">
 
-	<div id="screen-2-carousel" class="carousel slide" data-ride="carousel">    
-
+	<div id="screen-2-carousel" class="carousel slide" data-ride="carousel">    							<!-- Кнопки соцмереж -->
+							<div class="hover-feed"> 
+								<a href="#" onclick="openbox('box1'); return false"><img src="/wp-content/themes/flash/img/fb.png" alt="facebook"></a> 
+								<a href="#" onclick="openbox('box2'); return false"><img src="/wp-content/themes/flash/img/insta.png" alt="instagram"></a> 
+								<a href="#" onclick="openbox('box3'); return false"><img src="/wp-content/themes/flash/img/vimeo.png" alt="vimeo"></a> 
+							</div>
+														<!-- Вікна соцмереж -->
+							<div id="box1" style="display: none;">
+							<div class="feed-header"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook<a href="#" id="hider" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
+								<?php echo do_shortcode( '[custom-facebook-feed]' ); ?>	
+							</div>
+							</div>
+							<div id="box2" style="display: none;">
+							<div class="feed-header"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram<a href="#" id="hider2" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
+								<?php echo do_shortcode( '[instagram-feed]' ); ?>
+							</div>
+							</div>
+							<div id="box3" style="display: none;">
+							<div class="feed-header"><i class="fa fa-vimeo-square" aria-hidden="true"></i> Vimeo<a href="#" id="hider3" class="close-feed">&#215;</a></div>
+							<div class="feed-block">
+								<?php echo do_shortcode( '[vimeography id="1"]' ); ?>
+							</div>
+							</div>										
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 
 			<!-- slide-1 -->
 			<div id="screen-2-slide-1" class="item active">
 
+
+
 				<div class="row full-height" style="margin-right:0 !important;margin-left: 0 !important; background: url(<?=get_field('screen_2_slaid_1_img_back')?>);">
 					<div class="col-md-12 col-lg-5 col-sm-12 container">
 						<div class="slide-1-content">
+
+
 							<img class="slide-1-img" src="<?=get_field('screen_2_slaid_1_img')?>">
 
 							<div class="slide-1-text"><?=html_entity_decode(get_field('screen_2_slaid_1_text'));?>
@@ -87,6 +114,7 @@ do_action( 'flash_before_body_content' ); ?>
 
 		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#screen-2-carousel" data-slide="prev">
+
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span class="sr-only">Previous</span>
 		</a>
@@ -110,7 +138,7 @@ do_action( 'flash_before_body_content' ); ?>
 		</div>
 	</div>
 	<div class="sky-devider">
-		<img class="sky" src="/wp-content/themes/flash-child/img/dum.png" alt="sky">
+		<img class="sky" src="/wp-content/themes/flash/img/dum.png" alt="sky">
 	</div>
 </section>
 
@@ -217,55 +245,9 @@ do_action( 'flash_before_body_content' ); ?>
 		</div>
 	</section>
 
-	<section class="section" id="screen-6" data-anchor="social">
-		<div class="container">
-			<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
-				<div class="footer-mar text-center">
-					<div class="col-md-4">
-						<div class="row">
-							<h3 class="footer-h3"><?=get_field('screen_5_col_1_soc_titile')?></h3>
-							<a href="<?=get_field('screen_5_col_1_soc_1')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/insta.png" alt="Instagram"></a>
-							<a href="<?=get_field('screen_5_col_1_soc_2')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/fb.png" alt="Facebook"></a>
-							<a href="<?=get_field('screen_5_col_1_soc_3')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/vimeo.png" alt="Vimeo"></a>
-							<a href="<?=get_field('screen_5_col_1_soc_4')?>"><img class="social-img" src="/wp-content/themes/flash-child/img/yt.png" alt="You Tube"></a>
-						</div>
-						<div class="row">
-							<h3 class="footer-h3"><?=get_field('screen_5_col_1_form_title')?></h3>
-							<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_1_form_code')));
-							?> 
-						</div>
-					</div>
-					<div class="col-md-4">
-						<h3 class="footer-h3"><?=get_field('screen_5_col_2_title')?></h3>
-						<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_2_gal')));
-						?> 
-					</div>
-					<div class="col-md-4">
-						<h3 class="footer-h3"><?=get_field('screen_5_col_3_title')?></h3>
-						<? echo do_shortcode(html_entity_decode(get_field('screen_5_col_3_gal')));
-						?> 
-					</div>
-				</div>
-			</div>
-		</div>
+	
 
-		<div class="footer-home text-center hidden-xs">
-			<div class="footer-home-top">
-				<a href="platform-it.com">
-					<img style="    width: 38px;" src="/wp-content/themes/flash-child/img/webstudio.png" alt="webstudio">
-					<span class="footer-text">
-						<span>designed by</span> 
-						<div style="margin-left: 50px;">platform <span style="color: #52ac62">it</span></div> </span>
-					</a>
-				</div>
-				<div class="footer-home-bot">
-					ЛЬВІВ 2017 | ВСІ ПРАВА ЗАХИЩЕНО
-				</div>
-			</div>
-
-		</section>
-
-	</div>
+	
 
 
 

@@ -4129,25 +4129,97 @@ WooCommerce
 
 @font-face {
 	font-family: "AlfiosBold";
-	src: url("/wp-content/themes/flash-child/fonts/AlfiosRegular.eot");
-	src: url("/wp-content/themes/flash-child/fonts/AlfiosRegular.eot?#iefix")format("embedded-opentype"),
-	url("/wp-content/themes/flash-child/fonts/AlfiosRegular.woff") format("woff"),
-	url("/wp-content/themes/flash-child/fonts/AlfiosRegular.ttf") format("truetype");
+	src: url("/wp-content/themes/flash/fonts/AlfiosRegular.eot");
+	src: url("/wp-content/themes/flash/fonts/AlfiosRegular.eot?#iefix")format("embedded-opentype"),
+	url("/wp-content/themes/flash/fonts/AlfiosRegular.woff") format("woff"),
+	url("/wp-content/themes/flash/fonts/AlfiosRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "OpenSansSemibold";
-	src: url("/wp-content/themes/flash-child/fonts/opensansSemibold.ttf") format("truetype");
+	src: url("/wp-content/themes/flash/fonts/opensansSemibold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "OpenSansLight";
-	src: url("/wp-content/themes/flash-child/fonts/OpenSansLight.ttf") format("truetype");
+	src: url("/wp-content/themes/flash/fonts/OpenSansLight.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
+.site{
+	background: transparent;
+}
+
+
+/* Header */
+.logo .logo-image{
+	padding: 10px;
+	line-height: 60px;
+}
+.logo .logo-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.fullscreen-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+}
+
+.fullscreen-bg__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Slide 1 */
+
+section#screen-1{
+	position: relative;
+}
+
+/* Vimeo player style */
+.embed-container{ 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: relative;
+	text-align: center;
+	width: 70%;
+	height: 80vh;
+	margin-top: 100px;
+}
+
+/* Slide 3 */
+
+section#screen-3 .container{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+/* Global */
 .site{
 	background: transparent;
 }
@@ -4446,30 +4518,38 @@ a img {
 	display: inline-block;
 	font-size: 25px;
 	margin-bottom: 0px;
+	font-family: OpenSansSemibold;
 }
 .post-year{
 	color: blue;
 	margin-bottom: 0px;
-
+	font-family: OpenSansSemibold;
 	display: inline-block;
 }
 .post-film-type{
 	padding-top: 0px;
 	padding-bottom: 5px;
 	font-size: 13px;
+	font-family: OpenSansSemibold;
 }
 .post-sub-title{
 	color: lightblue;
 	line-height: 1.2;
+	font-family: OpenSansSemibold;
 }
 .post-genre, .post-time, .post-operator, .post-art-director, .post-sound-regiser{
 	margin: 0;
 	line-height: 1.1;
+	font-family: OpenSansSemibold;
+}
+.post-genre, .post-time, .post-operator, .post-art-director, .post-sound-regiser span{
+	font-family: OpenSansLight;
 }
 .detail-link{
 	display: block;
 	text-align: center;
 	padding-top: 50px;
+	font-family: OpenSansSemibold;
 }
 .link-container{
 	text-align: center;
@@ -4596,6 +4676,7 @@ background-color: white;
 	font-size: 17px;
 	text-transform: uppercase;
 	margin-top: 10px;
+	font-family: OpenSansSemibold;
 }
 .single-post-container{
 	padding: 10px;
@@ -4641,10 +4722,12 @@ background-color: white;
 }
 .rec-news-desc .post-content{
 	font-size: 12px;
+	font-family: OpenSansSemibold;
 }
 .date-cont{
 	font-size: 11px;
 	padding-top: 5px;
+	font-family: OpenSansSemibold;
 }
 .project-title{
 	color: #f0f0f0;
@@ -4725,18 +4808,21 @@ background-color: white;
 	font-size: 16px;
 	color: #9caac3;
 	font-weight: bold;
+	font-family: OpenSansSemibold;
 }
 .triler-link{
 	float: left;
 	font-size: 16px;
 	color: #9caac3;
 	font-weight: bold;
+	font-family: OpenSansSemibold;
 }
 .onlain-link{
 	float: 0;
 	font-size: 16px;
 	color: #9caac3;
 	font-weight: bold;
+	font-family: OpenSansSemibold;
 }
 .tizer-link:hover{
 	text-decoration: none;
@@ -4894,11 +4980,11 @@ background-color: white;
 	outline-offset: -2px;
 }
 .glyphicon-chevron-left:before {
-	content: url(/wp-content/themes/flash-child/img/arrow_l.png) !important;
+	content: url(/wp-content/themes/flash/img/arrow_l.png) !important;
 
 }
 .glyphicon-chevron-right:before {
-	content: url(/wp-content/themes/flash-child/img/arrow_r.png) !important;
+	content: url(/wp-content/themes/flash/img/arrow_r.png) !important;
 
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
@@ -5086,12 +5172,15 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 }
 .news-content{
 	color: #9caac3;
+	font-family: OpenSansSemibold;
 }
 .news-date-cont{
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 .news-link-cont a{
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 .last-title{
 	color: #f0f0f0;
@@ -5104,6 +5193,7 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 }
 .last-link a{
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 #post-196{
 	background: linear-gradient(to bottom, #353940, #101010);
@@ -5121,9 +5211,11 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 .onenews-date{
 	margin-right: 10px;
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 .onenews-count{
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 .onenews-count span{
 	font-size: 25px;
@@ -5132,6 +5224,7 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 }
 .onenews-text{
 	color: #f0f0f0;
+	font-family: OpenSansSemibold;
 }
 .form-pad{
 	padding-right:0px;
@@ -5242,9 +5335,9 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 	.footer-home-bot{
 		padding-top: 0px;
 	}
-	/*#site-navigation .menu-toggle{*/
-	/*	z-index: 99999;*/
-	/*}*/
+	#site-navigation .menu-toggle{
+		z-index: 99999;
+	}
 	.logo .logo-image {
 		margin-top: -10px;
 	}
@@ -5255,26 +5348,43 @@ div.wonderplugin-gridgallery-list > div > div.wonderplugin-gridgallery-item-text
 
 }
 .feed-block{
-	z-index: 99999999999;
+	z-index: 9999;
 	position: absolute;
-	right:150px;
-	top:30%;
+	right:80px;
+	top: 43% !important;
 	background-color: white;
 	height: 350px;
 	padding: 10px;
 	overflow: scroll;
-	width: 250px;
+	width: 275px;
 }
-.hover-feed{
-	z-index: 99999999999;
-	position: absolute;
-	right: 15px;
-	top: 75%;
+.feed-header {
+    z-index: 99999;
+    position: absolute;
+    right: 80px;
+    top: 39% !important;
+    background-color: #c3cee0;
+    height: 25px;
+    padding: 5px 5px 0px 5px;
+    width: 275px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
 }
 .close-feed{
 	position: absolute;
-	top: 5px;
+	top: -5px;
 	right: 5px;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+    font-weight: 100;
+}
+.hover-feed{
+	z-index: 9999;
+	position: absolute;
+	right: 15px;
+	top: 75%;
 }
 .hover-feed a{ 
 	position: relative;

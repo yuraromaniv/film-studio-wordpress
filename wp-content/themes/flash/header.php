@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <?php wp_head(); ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="theme-color" content="#353940">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -30,25 +31,7 @@
 
 <?php
 if ( get_theme_mod( 'flash_disable_preloader', '' ) != 1 ) : ?>
-  <div class="loading" id="preloader">
-	<div class="loading-text">
-		<span class="loading-text-words">I</span>
-		<span class="loading-text-words">N</span>
-		<span class="loading-text-words">V</span>
-		<span class="loading-text-words">E</span>
-		<span class="loading-text-words">R</span>
-		<span class="loading-text-words">T</span>
-		<span class="loading-text-words"> </span>
-		<span class="loading-text-words">P</span>
-		<span class="loading-text-words">I</span>
-		<span class="loading-text-words">C</span>
-		<span class="loading-text-words">T</span>
-		<span class="loading-text-words">U</span>
-		<span class="loading-text-words">R</span>
-		<span class="loading-text-words">E</span>
-		<span class="loading-text-words">S</span>
-	</div>
-</div>
+ 
 <?php endif; ?>
 
 <?php

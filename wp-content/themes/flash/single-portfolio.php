@@ -45,13 +45,13 @@ get_header();
 					<div class="social-bl">
 						<div style="margin: 0;" class="row">
 							<p class="project-music">Соціальні посилання:</p>
-							<div style="padding: 0" class="col-md-6">
+							<div style="padding: 0" class="col-md-6 col-xs-7">
 								<a href="<?=get_post_field('link_inst')?>"><img class="single-social-img " src="/wp-content/themes/flash/img/insta.png" alt="Instagram"></a>
 								<a href="<?=get_post_field('link_fb')?>"><img class="single-social-img" src="/wp-content/themes/flash/img/fb.png" alt="Facebook"></a>
 								<a href="<?=get_post_field('link_vimeo')?>"><img class="single-social-img" src="/wp-content/themes/flash/img/vimeo.png" alt="Vimeo"></a>
 								<a href="<?=get_post_field('link_youtube')?>"><img class="single-social-img" src="/wp-content/themes/flash/img/yt.png" alt="You Tube"></a>
 							</div>
-							<div class="col-md-6 single-link">
+							<div class="col-md-6 col-xs-5 single-link">
 								<?=html_entity_decode(get_field('other_link'));?>
 							</div>
 						</div>

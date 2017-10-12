@@ -46,7 +46,7 @@
 			</div>
 		</div>
 
-		<div class="footer-home text-center hidden-xs">
+		<div class="footer-home text-center">
 			<div class="footer-home-top">
 				<a href="platform-it.com">
 					<img style="    width: 38px;" src="/wp-content/themes/flash/img/webstudio.png" alt="webstudio">
@@ -90,9 +90,8 @@ do_action( 'flash_after' ); ?>
 
 
 <script>
-	$(window).on('resize', function () {
-    if ($(window).width() > 900) {
-       $(document).ready(function() {
+  if(document.documentElement.clientWidth > 1200) {
+  $(document).ready(function() {
 	$('#fullpage').fullpage({
 		
 		//Custom selectors
@@ -105,8 +104,8 @@ do_action( 'flash_after' ); ?>
 
 	});
 });
-    } 
-})
+  }
+     
 
 </script>
 <script src="/wp-content/themes/flash/js/audio.min.js"></script>

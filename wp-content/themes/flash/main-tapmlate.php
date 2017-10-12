@@ -10,6 +10,31 @@ get_header(); ?>
 * flash_before_body_content hook
 */
 do_action( 'flash_before_body_content' ); ?>
+<!--прелоадер-->
+<?php
+if ( get_theme_mod( 'flash_disable_preloader', '' ) != 1 ) : ?>
+  <div class="loading" id="preloader">
+	<div class="loading-text">
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">N</span>
+		<span class="loading-text-words">V</span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">R</span>
+		<span class="loading-text-words">T</span>
+		<span class="loading-text-words"> </span>
+		<span class="loading-text-words">P</span>
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">C</span>
+		<span class="loading-text-words">T</span>
+		<span class="loading-text-words">U</span>
+		<span class="loading-text-words">R</span>
+		<span class="loading-text-words">E</span>
+		<span class="loading-text-words">S</span>
+	</div>
+</div>
+?>
+<!--прелоадер-->
+<?php endif; ?>
 <div id="fullpage">	
 	<section class="section" id="screen-1" data-anchor="main">
 		<div class="black-mask">
@@ -47,7 +72,7 @@ if (playPromise !== undefined) {
 <section class="section " id="screen-2" data-anchor="premiere">
 
 	<div id="screen-2-carousel" class="carousel slide" data-ride="carousel">    							<!-- Кнопки соцмереж -->
-							<div class="hover-feed"> 
+							<div class="hover-feed hidden-xs"> 
 								<a href="#" onclick="openbox('box1'); return false"><img src="/wp-content/themes/flash/img/fb.png" alt="facebook"></a> 
 								<a href="#" onclick="openbox('box2'); return false"><img src="/wp-content/themes/flash/img/insta.png" alt="instagram"></a> 
 								<a href="#" onclick="openbox('box3'); return false"><img src="/wp-content/themes/flash/img/vimeo.png" alt="vimeo"></a> 

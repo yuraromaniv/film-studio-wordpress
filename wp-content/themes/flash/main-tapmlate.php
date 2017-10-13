@@ -183,7 +183,7 @@ if (playPromise !== undefined) {
 	<div style="margin-right:0 !important;margin-left: 0 !important;" class="row">
 		<div class="mar-top">
 			<div class="nav nav-tabs text-center">
-				<span class="active"><a data-toggle="tab" href="#menu1">Саундтреки</a></span>
+				<span class="active"><a data-toggle="tab" href="#menu1">Відео-кліпи</a></span>
 				<span><a data-toggle="tab" href="#menu2">Промо-Ролики</a></span>
 			</div>
 

@@ -4782,20 +4782,20 @@ background-color: white;
 	color: #f0f0f0;
 	font-weight: 300;
 }
-.project-detail{
-	position: relative;
-	top: 60px;
-	margin: 0 auto;
-	width: 40%;
-	border: none !important;
-	border-bottom: 2px solid rgb(0, 10, 28) !important;
-	border-radius: 10px !important;
-	padding: 7px 0px 7px 0px !important;
-	color: black !important;
-	text-shadow: 0px 0px 0px black !important;
-	font-weight: 500 !important;
-	font-size: 15px !important;
-	background-color: rgb(100, 146, 161) !important;
+.project-detail {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    width: 40%;
+    border: none !important;
+    border-bottom: 0;
+    border-radius: 0px !important;
+    padding: 7px 0px 7px 0px !important;
+    color: black !important;
+    text-shadow: 0px 0px 0px black !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    background-color: #FF9800 !important;
 }
 .project-detail:hover{
 	text-decoration: none;
@@ -4927,27 +4927,49 @@ background-color: white;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;	
 }
-.last-film-btn1{
-	border: none !important;
-	border-bottom: 2px solid !important;
-	border-radius: 10px !important;
-	padding: 12px 15px 12px 15px !important;
-	color: #fff !important;
-	text-shadow: 5px 3px 5px black !important;
-	font-weight: 500 !important;
-	font-size: 18px !important;
-	background-color: rgb(53, 58, 64) !important;
+.last-film-btn1 {
+    border: none !important;
+    border-bottom: 0px !important;
+    border-radius: 0px !important;
+    padding: 12px 15px 12px 15px !important;
+    color: #fff !important;
+    text-shadow: none;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    background-color: #FF9800 !important;
+}
+.last-film-btn1:hover {
+    border: none !important;
+    border-bottom: 0px !important;
+    border-radius: 0px !important;
+    padding: 12px 15px 12px 15px !important;
+    color: #fff !important;
+    text-shadow: none;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    background-color: #F57C00 !important;
 }
 .last-film-btn2{
 	border: none !important;
-	border-bottom: 2px solid rgb(0, 10, 28) !important;
-	border-radius: 10px !important;
+	border-bottom: 0px !important;
+	border-radius: 0px !important;
 	padding: 12px 15px 12px 15px !important;
 	color: black !important;
-	text-shadow: 0px 0px 0px black !important;
+	text-shadow: none;
 	font-weight: 500 !important;
 	font-size: 18px !important;
-	background-color: rgb(100, 146, 161) !important;
+	background-color: #FF9800 !important;
+}
+.last-film-btn2:hover {
+    border: none !important;
+    border-bottom: 0px !important;
+    border-radius: 0px !important;
+    padding: 12px 15px 12px 15px !important;
+    color: #fff !important;
+    text-shadow: none;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    background-color: #F57C00 !important;
 }
 .sky{
 	position: absolute;
